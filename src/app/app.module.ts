@@ -5,7 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './components/app.component';
-import { HomeComponent } from './components/home/home/home.component';
+import { HomeComponent } from './components/home/home.component';
+
+import { HttpService } from './services/http.service';
 
 var routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' }
