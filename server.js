@@ -3,9 +3,13 @@ var bodyParser = require('body-parser');
 var app = express();
 var server = require('http').createServer(app);
 
+var instaRoutes = require('./api/routes/instaRoutes');
+
 var port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
+
+instaRoutes(app);
 
 //Angular Build Directory
 var distDir = __dirname + '/dist/';

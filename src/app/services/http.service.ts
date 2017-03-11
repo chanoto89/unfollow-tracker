@@ -7,8 +7,17 @@ export class HttpService {
 
   constructor(private http: Http) { }
 
-  authenticateInstagram(): void {
-    this.http.get('/api/authenticateInstagram');
+  authenticateInstagram(): Promise<string> {
+    return this.http.get('/api/instagram/authenticate')
+      .toPromise()
+      .then(response => response.json() as string)
+      .catch((err) => console.log(err));
+  }
 
+  handleAuthentication(code: string): Promise<string> {
+    return this.http.post('/api/instagram/authenticated', { code: code })
+      .toPromise()
+      .then(response => response.json() as string)
+      .catch((err) => console.log(err));
   }
 }

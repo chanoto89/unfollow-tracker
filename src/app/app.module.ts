@@ -24,7 +24,9 @@ var routes: Routes = [
     HttpModule, 
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    HttpService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
