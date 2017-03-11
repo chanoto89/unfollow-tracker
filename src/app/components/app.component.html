@@ -1,5 +1,34 @@
-<h1>
-  {{title}}
-</h1>
+<div class="header-main">
+  <img src="/images/social-media-2.jpg" class="header-img"/>
+  <div class="header-text">
+    <h1>Unfollow Tracker</h1>
+    <h2>Lose the traitors</h2>
+  </div>
+  <button id="nav-button" type="button" class="ghost-button"><i class="glyphicon glyphicon-menu-down"></i></button>
+</div>
 
-<router-outlet></router-outlet>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Unfollow Tracker</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li><a href="#">About <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

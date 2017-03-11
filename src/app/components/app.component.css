@@ -1,0 +1,36 @@
+#nav-button {
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+}
+
+.ghost-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 50px;
+    color: #fff;
+    font-size: xx-large;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.ghost-button:active, 
+.ghost-button:hover {
+    background-color: #fff;
+    color: #008cba;
+}
+
+.header-main {
+    max-height: 100vh; width: 100%;
+}
+
+.header-text {
+    position: absolute; 
+    text-align: center; 
+    top: 20px; left: 40%; 
+    color: white
+}
+
+img.header-img {
+    height: 100vh; width: 100%; filter: brightness(30%);
+}

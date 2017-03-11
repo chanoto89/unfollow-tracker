@@ -8,6 +8,7 @@ gulp.task('migrate-bootstrap-files', function() {
 });
 
 gulp.task('dev', function() {
+    gulp.src('node_modules/bootstrap/dist/fonts/**').pipe(gulp.dest('fonts'));
     return gulp.src('node_modules/bootstrap/dist/js/**').pipe(gulp.dest('js'));
 });
 
