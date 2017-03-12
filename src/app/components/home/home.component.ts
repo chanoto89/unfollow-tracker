@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
         
         if (this.code) {
           this.httpService.handleAuthentication(this.code)
-          .then((response: string) => {
+          .then((response) => {
             console.log(response);
           });
         }

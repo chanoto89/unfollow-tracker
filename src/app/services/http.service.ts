@@ -14,10 +14,10 @@ export class HttpService {
       .catch((err) => console.log(err));
   }
 
-  handleAuthentication(code: string): Promise<string> {
+  handleAuthentication(code: string): Promise<any> {
     return this.http.post('/api/instagram/authenticated', { code: code })
       .toPromise()
-      .then(response => response.json() as string)
+      .then(response => response)
       .catch((err) => console.log(err));
   }
 }
