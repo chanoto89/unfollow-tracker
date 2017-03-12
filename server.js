@@ -11,10 +11,6 @@ var port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-router.get('/what', function(req, res) {
-    res.send('what?');
-});
-
 appRoutes(router, app);
 
 //Angular Build Directory
